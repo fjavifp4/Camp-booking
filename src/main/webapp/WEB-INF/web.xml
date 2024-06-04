@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+    
+    <display-name>Campamentos</display-name>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+<!-- controladores -->
+   
+    <context-param>
+        <param-name>LoginController</param-name>
+        <param-value>/mvc/controllers/common/LoginController.jsp</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>RegistroController</param-name>
+        <param-value>/mvc/controllers/common/RegistroController.jsp</param-value>
+    </context-param>
+
+<!-- vistas -->
+
+   <context-param>
+        <param-name>RegistroView</param-name>
+        <param-value>/mvc/views/admin/RegistroView.jsp</param-value>
+    </context-param>
+
+
+<!--properties-->
+    <context-param>
+        <param-name>config</param-name>
+        <param-value>/resources/config.properties</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>sql</param-name>
+        <param-value>/resources/sql.properties</param-value>
+    </context-param>
+
+     <context-param>
+        <param-name>aclAdmin</param-name>
+        <param-value>/include/aclAdmin.jsp</param-value>
+    </context-param>
+
+     <context-param>
+        <param-name>aclUsuario</param-name>
+        <param-value>/include/aclUsuario.jsp</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>aclVisitante</param-name>
+        <param-value>/include/aclVisitante.jsp</param-value>
+    </context-param>
+
+
+
+
+<!-- paginas de error -->
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/errorPages/error404.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/errorPages/error500.jsp</location>
+
+    </error-page>
+
+
+</web-app>

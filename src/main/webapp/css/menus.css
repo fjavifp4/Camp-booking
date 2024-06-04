@@ -1,0 +1,69 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/login-background.jpg'); 
+    background-size: cover; 
+}
+
+.container, .myClass {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px 50px 30px;
+    margin: 70px auto;
+    max-width: 425px;
+}
+
+.nombre{    
+    text-align: center;
+    text-indent: -10px;
+    background-color: #333;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #2980b9;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+fieldset {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #e9e9e9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.botones {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    padding: 10px;
+}
